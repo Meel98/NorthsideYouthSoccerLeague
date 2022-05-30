@@ -1,0 +1,292 @@
+
+body {
+  font-style:unset;
+  background-image: url(./images/backgrond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.logo{
+  width: 40px;
+}
+
+
+
+ /* ------- flex container --------- */
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+
+}
+
+/* -------- title ---------- */
+#pageheader{
+  font-family: "Impact";
+  position: center;
+  font-style: italic;
+  text-align: center;
+  color: rgb(201, 201, 198);
+}
+#pageheader h1{
+  margin: 10px;
+}
+#index, #info, #about, #rules, #registration{
+  display: none;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: rgba(255,255,255,.1);
+}
+/* <------ container info-------> */
+#bodycontent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+  font-size: normal; 
+  z-index: 2;
+ padding: 2px;
+
+}
+.card {
+  width: 300px;
+  background-color: rgba(255,255,255,.3);
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem }
+
+#max{
+  width: 90%;
+  margin: 5%;
+}
+
+/* <------ Information styles -------> */
+#styles{
+  color: aliceblue;
+}
+
+
+ #infotable{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   color: rgb(218, 214, 214);
+ }
+
+#infotable th{
+  text-decoration: underline;
+  padding: 0 1.0em;
+  padding-top: 1em; 
+}
+#infotable a{
+  color: rgb(25, 216, 25);
+}
+
+#infotable td{
+  text-align: left;
+  padding: 1.0em;
+}
+
+.announcement{
+  font-style: italic; 
+  text-decoration: underline;
+  }
+
+/* <------- rules--------> */
+
+#infotable h3{
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 1em;
+  color: rgb(1, 41, 6);
+}
+
+.impinfo{
+  font-weight: bold;
+  color: white;
+  font-size:  1em;
+}
+
+.note{
+  font-weight: normal;
+  font-size: 1.0em;
+}
+ .contract{
+  font-size: 1em;
+  background-color: transparent;
+  border: 2px solid chartreuse;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+
+
+/* <------ form------>  */
+
+legend{
+  font-weight: bold;
+}
+
+.stylized{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.stylized label{
+  width:100%;
+  margin-top: 15px;
+  padding-right: 1em;
+  text-align: center;
+  float: left;  
+  
+}
+#bodycontent fieldset{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(179, 248, 176);
+  border-radius: 10px;
+  color: white;
+
+}
+fieldset label{
+  padding-left: 2em;
+}
+
+#tableStyle p{
+  margin: 1px;
+}
+
+
+.stylized input{
+  width: 100%;
+  padding:4px 2px;
+  background-color: transparent;
+ color: white;
+  border:solid 1px chartreuse;
+}
+.stylized label{
+  color: white;
+}
+.footer{
+  border: 1px solid rgb(179, 248, 176);
+  background-color: rgb(179, 248, 176, .127);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+#checks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+#checks div{
+  margin-left:  10px;
+}
+#infT{
+  display: none ;
+}
+.dropdown-menu li{
+  width: 300px;
+}
+.card-about{
+  width: 365px;
+    height: 340px;
+    border-radius: 10px;
+    padding: 8px 8px 8px 8px;
+    background: rgba(0,0,0,.125);
+    margin: 10px;
+    align-items: center;
+}
+.card-about b{
+  text-shadow: 0 0 2px white;
+}
+.card-about h5{
+  font-family: "Impact";
+  text-align: center;
+  text-shadow: 0 0 2px rgb(32, 255, 43);
+  font-size: 30px;
+  color: rgb(61, 60, 60);
+}
+.card-about p{
+  font-family: "Impact";
+  text-align: center;
+  text-shadow: 0 0 2px white;
+  font-size: 30px;
+  
+}
+
+
+@media (max-width: 480px){
+  .footer{
+    display: none;
+  }
+  #resultTable iframe{
+    display: none;
+  }
+  #resultTableS iframe{
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .body{
+   display: none;
+  }
+    #style{
+      font-size: normal;
+      background-color: rgb(64, 199, 82);
+      border-radius: 10px;
+      border-color: white;
+      padding-left: 10px;
+      padding-right:10px;
+    }
+    #pageheader{
+      font-family: "Impact";
+      position: center;
+      font-style: italic;
+      text-align: center;
+      color: rgb(201, 201, 198);
+     
+    }
+    #pageheader h1{
+      font-size: 30px;
+      margin:0%;
+    }
+    #infT{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: rgb(218, 214, 214);
+
+    }
+    #infT p{
+      padding: 0%;
+      margin: 0%;
+    }
+   
+   #der td{
+     color: white;
+     padding-top: 1em; 
+     padding: 25px;
+     text-align: center;
+     font-style: normal;
+     font-weight: lighter;
+   }
+   
+  #land{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  
+}
+
